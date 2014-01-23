@@ -32,4 +32,28 @@ https://www.dogeapi.com/checkout?payment_address={PAYMENT_ADDRESS}&amount_doge=5
 <!--This is an example payment to Address 1
 https://www.dogeapi.com/checkout?payment_address=DLYVirpvQF3yWynB3YqsfBMXR7Uem4ZqFt&amount_doge=5&widget_type=default&widget_key=119drde1rkqhie1baz63811v3kf4
 -->
+
+
+<!--<script language="JavaScript" type="text/javascript">
+function makeFrame() {
+   ifrm = document.createElement("IFRAME");
+   ifrm.setAttribute("src", "http://developerfusion.com/");
+   ifrm.style.width = 640+"px";
+   ifrm.style.height = 480+"px";
+   document.body.appendChild(ifrm);
+}
+</script>-->
+
+<script language="JavaScript" type="text/javascript">
+function showAPI() {
+   ifrm = document.getElementById('secondiFrame');
+   ifrm.setAttribute("src", "https://www.dogeapi.com/wow/?a=get_current_price");
+   document.body.appendChild(ifrm);
+}
+</script>
+
+<!--<p><a href="#" onMouseDown="makeFrame()">GO! </a></p>-->
+<iframe onLoad="showAPI()" id="secondiFrame"></iframe>
+
+
 </body>
